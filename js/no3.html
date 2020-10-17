@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>No3</title>
+</head>
+
+<body>
+    <strong>Mencari Jumlah dari Deret 1+2+3…+N </strong>
+
+    <br /><br />
+
+    <script>
+        let sum = 0;
+        const n = parseInt(prompt("Masukkan Nilai N: "));
+        for (let i = 1; i <= n; i++) {
+            sum += i;
+            document.write(i !== n ? `${i} + ` : `${i} = ${sum}`);
+        }
+    </script>
+</body>
+
+</html>

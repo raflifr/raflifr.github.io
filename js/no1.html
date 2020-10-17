@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>No1</title>
+</head>
+
+<body>
+    <strong>
+			Mencari Jumlah dan Rata-Rata Dari Barisan Bilangan
+    </strong>
+
+    <script>
+        let count = 0;
+        let sum = 0;
+
+        const bil = prompt(
+                "Masukkan Barisan Bilangan (Pisahkan Oleh Spasi) : "
+            )
+            .split(" ")
+            .map((element) => parseInt(element));
+        for (let i = 0; i < bil.length; i++) {
+            sum += bil[i];
+            count++;
+        }
+        document.write(`${bil.join(" + ")}<br />`);
+        document.write(`Total : ${sum}<br />`);
+        document.write(`Rata-rata : ${sum / count}`);
+    </script>
+</body>
+
+</html>

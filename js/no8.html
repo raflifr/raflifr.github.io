@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>No8</title>
+</head>
+
+<body>
+    <strong>
+			Mencari Faktorial Bilangan N (N!=1 x 2 x 3 x … x N)
+		</strong>
+
+    <br /><br />
+
+    <script>
+        let a = 1;
+
+        const n = parseInt(prompt("Masukkan Nilai N: "));
+
+        for (let ctrl = 1; ctrl <= n; ctrl++) {
+            a *= ctrl;
+
+            document.write(ctrl === n ? `${ctrl}` : `${ctrl} * `);
+        }
+
+        document.write("<br />= " + a);
+    </script>
+</body>
+
+</html>
